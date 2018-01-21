@@ -5,7 +5,7 @@ void SmartHomeWiFiManager::init(String apSSID,
   this->apSSID     = apSSID;
   this->apPassword = apPassword;
 
-  delay(500); // required, if missing the WiFi.status() call is returning WL_CONNECT_FAILED and stops trying to connect
+  delay(2000); // required, if missing the WiFi.status() call is returning WL_CONNECT_FAILED and stops trying to connect
 
   // Reset settings
   // wifiManager.resetSettings();
